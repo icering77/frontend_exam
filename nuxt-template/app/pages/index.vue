@@ -119,6 +119,14 @@
 
 <script setup lang="ts">
 
+// api示範: 請使用seo良好方式取得資料
+
+// await $fetch('/api/articles',{
+//         query: {
+//             page:1,
+//             per_page: 10,
+//             type:0
+//         }
 </script>
 
 <style scoped>
