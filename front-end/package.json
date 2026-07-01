@@ -1,0 +1,37 @@
+{
+  "name": "front-end",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint": "eslint --max-warnings 0 && stylelint './app/**/*.{css,scss,vue}' -i ./.gitignore --mw 0",
+    "lint:fix": "eslint --fix --max-warnings 0 && stylelint './app/**/*.{css,scss,vue}' -i ./.gitignore --fix --mw 0",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.4.8",
+    "vue": "^3.5.38",
+    "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^8.2.0",
+    "@eslint/css": "^1.2.0",
+    "@html-eslint/parser": "^0.60.0",
+    "@kikiutils/eslint-config": "^9.1.0",
+    "@kikiutils/eslint-plugin-vue": "^10.9.0",
+    "@kikiutils/stylelint-config": "^0.4.1",
+    "@unocss/nuxt": "^66.6.8",
+    "dotenv-cli": "^11.0.0",
+    "eslint-plugin-better-tailwindcss": "^4.5.0",
+    "eslint-plugin-format": "^2.0.1",
+    "knip": "^6.9.0",
+    "tailwind-csstree": "^0.3.1",
+    "tailwindcss": "^4.2.4",
+    "unocss": "^66.6.8",
+    "unplugin-fonts": "^2.0.0",
+    "vue-eslint-parser": "^10.4.0"
+  }
+}
