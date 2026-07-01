@@ -1,20 +1,25 @@
 {
-  "name": "front-end",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "dotenv -e ./.env.production.local -v NODE_ENV=production -- nuxt build",
+    "dev": "dotenv -e ./.env.development.local -v NODE_ENV=development -- nuxt dev",
+    "generate": "dotenv -e ./.env.production.local -v NODE_ENV=production -- nuxt generate",
+    "knip:deps": "knip --dependencies",
+    "knip:exports": "knip --exports",
     "lint": "eslint --max-warnings 0 && stylelint './app/**/*.{css,scss,vue}' -i ./.gitignore --mw 0",
     "lint:fix": "eslint --fix --max-warnings 0 && stylelint './app/**/*.{css,scss,vue}' -i ./.gitignore --fix --mw 0",
+    "postinstall": "nuxt prepare",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "nuxt": "^4.4.8",
-    "vue": "^3.5.38",
-    "vue-router": "^5.1.0"
+    "@kikiutils/nuxt": "^11.0.0",
+    "@kikiutils/shared": "^15.0.2",
+    "@nuxtjs/robots": "^6.0.8",
+    "@vueuse/nuxt": "^14.3.0",
+    "nuxt": "^4.4.4",
+    "nuxt-security": "^2.5.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^8.2.0",
