@@ -58,7 +58,18 @@
             <div
                 class="text-20px font-bold"
             >
-                可透過下拉選單切換分類 預設為全部
+                可透過分頁跟左右按鈕切換頁數
+            </div>
+            <br>
+            <div
+                class="text-20px font-bold"
+            >
+                加分內容:
+            </div>
+            <div
+                class="text-20px font-bold"
+            >
+                可透過選單切換分類 預設為全部
             </div>
             <div
                 class="text-20px font-bold"
@@ -68,23 +79,33 @@
             <div
                 class="text-20px font-bold"
             >
-                可透過分頁跟左右按鈕切換頁數
+                可選擇每頁顯示幾筆文章(10, 20, 30, 50)
             </div>
             <div
                 class="text-20px font-bold"
             >
-                可選擇每頁顯示幾筆文章(10, 20, 30, 50)
+                使用組件封裝文章卡片，並透過prop傳入文章資料
+            </div>
+            <div
+                class="text-20px font-bold"
+            >
+                使用組件封裝頁碼選擇器並透過v-model或是props emit進行頁碼切換
+            </div>
+            <div
+                class="text-20px font-bold"
+            >
+                文章資料seo相關設定
+            </div>
+            <div
+                class="text-20px font-bold"
+            >
+                ux體驗
             </div>
             <br>
             <div
                 class="text-20px font-bold"
             >
-                點擊文章卡片可以跳轉文章詳細頁面或是彈窗
-            </div>
-            <div
-                class="text-20px font-bold"
-            >
-                api位置：/api/articles/{id}
+                點擊卡片跳轉文章詳細頁面或是彈窗（API：/api/articles/{id}）
             </div>
             <div
                 class="text-16px p-10px mt-5px rounded-sm border border-slate-200 bg-slate-50 text-slate-600"
@@ -108,31 +129,6 @@
     "type": 1
 }
 }</pre>
-            <div
-                class="text-20px font-bold"
-            >
-                加分內容:
-            </div>
-            <div
-                class="text-20px font-bold"
-            >
-                使用組件封裝文章卡片，並透過prop傳入文章資料
-            </div>
-            <div
-                class="text-20px font-bold"
-            >
-                使用組件封裝頁碼選擇器並透過v-model或是props emit進行頁碼切換
-            </div>
-            <div
-                class="text-20px font-bold"
-            >
-                文章資料seo相關設定
-            </div>
-            <div
-                class="text-20px font-bold"
-            >
-                ux體驗
-            </div>
         </div>
     </div>
 </template>
