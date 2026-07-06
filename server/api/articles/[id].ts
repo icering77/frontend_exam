@@ -1,10 +1,10 @@
 export default defineEventHandler((event) => {
     // 獲取動態路由參數中的 id (例如 /api/articles/45)
     const idParam = getRouterParam(event, 'id');
-    const id = parseInt(idParam || '', 10);
+    const id = Number.parseInt(idParam || '', 10);
 
     // 驗證 ID 是否為數字
-    if (isNaN(id)) {
+    if (Number.isNaN(id)) {
         throw createError({
             statusCode: 400,
             statusMessage: '文章 ID 必須是有效的數字。',
@@ -24,7 +24,5 @@ export default defineEventHandler((event) => {
         });
     }
 
-    return {
-        data: article,
-    };
+    return { data: article };
 });
