@@ -24,5 +24,9 @@ export default defineEventHandler((event) => {
         });
     }
 
-    return { data: article };
+    return {
+        data: article,
+        message: '取得文章詳細資訊成功',
+        success: true,
+    };
 });

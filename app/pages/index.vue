@@ -31,18 +31,20 @@
             <pre class="text-14px p-10px mt-5px max-w-600px rounded-sm bg-gray-100 font-mono text-gray-800">
 回傳格式：
 {
-"data": {
+  "data": {
     "count": "200",
     "data": [
-        {
-            "createdAt": "2026-07-01T14:30:00.000Z",
-            "description": "這是第 1 篇測試文章的詳細內文...",
-            "id": 1,
-            "title": "【最新消息】這是第 1 篇測試文章",
-            "type": 1
-        }
+      {
+        "createdAt": "2026-07-01T14:30:00.000Z",
+        "description": "這是第 1 篇測試文章的詳細內文...",
+        "id": 1,
+        "title": "【最新消息】這是第 1 篇測試文章",
+        "type": 1
+      }
     ]
-}
+  },
+  "message": "取得文章列表成功",
+  "success": true
 }
             </pre>
             <div
@@ -118,7 +120,7 @@
             <pre class="text-14px p-10px mt-5px max-w-600px rounded-sm bg-gray-100 font-mono text-gray-800">
 回傳格式：
 {
-"data": {
+  "data": {
     "content1": "這是第 1 篇測試文章的額外內容一。",
     "content2": "這是第 1 篇測試文章的額外內容二。",
     "content3": "這是第 1 篇測試文章的額外內容三。",
@@ -127,7 +129,9 @@
     "id": 1,
     "title": "【最新消息】這是第 1 篇測試文章",
     "type": 1
-}
+  },
+  "message": "取得文章詳細資訊成功",
+  "success": true
 }</pre>
         </div>
     </div>

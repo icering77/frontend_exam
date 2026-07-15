@@ -68,5 +68,7 @@ export default defineEventHandler((event) => {
             count: String(totalCount),
             data: paginatedData,
         },
+        message: '取得文章列表成功',
+        success: true,
     };
 });
