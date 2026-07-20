@@ -65,7 +65,7 @@ export default defineEventHandler((event) => {
 
     return {
         data: {
-            count: String(totalCount),
+            count: totalCount,
             data: paginatedData,
         },
         message: '取得文章列表成功',

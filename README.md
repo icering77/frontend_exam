@@ -18,7 +18,7 @@
   ```json
   {
     "data": {
-      "count": "200",
+      "count": 200,
       "data": [
         {
           "createdAt": "2026-07-01T14:30:00.000Z",

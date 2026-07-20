@@ -24,7 +24,10 @@ export default defineNuxtConfig({
     },
     kikiutilsNuxt: { enabledModules: { security: true } },
     modules: ['@kikiutils/nuxt'],
-    nitro: { preset: process.env.NITRO_PRESET || 'node-cluster' },
+    nitro: {
+        errorHandler: '~~/server/error',
+        preset: process.env.NITRO_PRESET || 'node-cluster',
+    },
     security: {
         headers: {
             contentSecurityPolicy: {
